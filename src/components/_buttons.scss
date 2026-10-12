@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as v;
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: v.$primary-color;
+  color: #07111f;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.25);
+  }
+}

@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as v;
+
+.section-title {
+  margin-bottom: 40px;
+
+  small {
+    color: v.$primary-color;
+  }
+
+  h2 {
+    font-size: 35px;
+    margin-top: 5px;
+  }
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s;
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
